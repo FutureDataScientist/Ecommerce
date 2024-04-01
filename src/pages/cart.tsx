@@ -26,7 +26,7 @@ const cart = () => {
   const [isValidCouponCode,setIsValidCouponCode] =useState<boolean>(false);
   useEffect(()=>{
     const timeOutId=setTimeout(()=>{
-      if(Math.random()>0.5){
+      if(Math.random()>0.7){
         setIsValidCouponCode(true);
       }
       else{
@@ -69,9 +69,10 @@ const cart = () => {
           {
             couponCode && (isValidCouponCode? <span className="green">₹{discount} off using the <code>{couponCode}</code></span>:<span className="red">Invalid Coupon <VscError/></span>)
           }
-        </aside>
-        {cartItems.length > 0 && <Link to="/shipping">Checkout</Link>
+           {cartItems.length > 0 && <Link to="/shipping">Checkout</Link>
         }
+        </aside>
+       
       
     </div>
   )

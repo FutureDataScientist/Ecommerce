@@ -70,6 +70,33 @@ const Search = () => {
          handler={addToCartHandler}
          photo="https://m.media-amazon.com/images/I/71vFKBpKakL._SX522_.jpg"
          />
+          <ProductCard
+         productId="mmmssdfgfa"
+         name="T-shirt"
+         price={345}
+         stock={231}
+         handler={addToCartHandler}
+         photo="https://m.media-amazon.com/images/I/61vmBRBEvsL._SX679_.jpg"
+         
+         />
+         <ProductCard
+         productId="mmmssdfafa"
+         name="Iphone"
+         price={3450000}
+         stock={231}
+         handler={addToCartHandler}
+         photo="https://m.media-amazon.com/images/I/71xb2xkN5qL._SX466_.jpg"
+         
+         />
+         <ProductCard
+         productId="mmdssdfafa"
+         name="HeadPhone"
+         price={34500}
+         stock={231}
+         handler={addToCartHandler}
+         photo="https://m.media-amazon.com/images/I/71UndyehtzL._SL1500_.jpg"
+         
+         />
          </div>
          <article>
           <button disabled={!isPrevPage} onClick={()=>setPage((prev)=>prev-1)}>Prev</button>
